@@ -34,6 +34,7 @@ public class Main {
                         break;
                     case "/":
                         if (secondNumber == 0) {
+                            System.out.println("На ноль делить нельзя, введите другое значение!");
                             continue;
                         }
                         result = del(firstNumber, secondNumber);

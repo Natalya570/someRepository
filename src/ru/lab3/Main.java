@@ -12,13 +12,9 @@ public class Main {
         int secondNumber = 0;
         while (!"q".equals(userInput)) {
             try {
-                if (scanner.hasNextInt()) {
-                    firstNumber = scanner.nextInt();
-                }
-                if (scanner.hasNextLine()) {
-                    userInput = scanner.nextLine();
-                }
-                if (scanner.hasNextInt()) {
+                firstNumber = scanner.nextInt();
+                userInput = scanner.next();
+                if (!"!".equals(userInput)) {
                     secondNumber = scanner.nextInt();
                 }
                 double result;
@@ -66,7 +62,7 @@ public class Main {
     }
     private static int fact(int numberOne){
         int res = 1;
-        for (int i = 1; i < numberOne; i++) {
+        for (int i = 1; i <= numberOne; i++) {
             res *= i;
         }
         return res; }

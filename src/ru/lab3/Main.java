@@ -10,8 +10,7 @@ public class Main {
         String userInput = "";
         int firstNumber = 0;
         int secondNumber = 0;
-        String errorInput = "";
-        while (!"q".equals(userInput) && !"q".equals(errorInput)) {
+        while (!"q".equals(userInput)) {
             try {
                 firstNumber = scanner.nextInt();
                 userInput = scanner.next();
@@ -45,11 +44,10 @@ public class Main {
                 }
                 System.out.println(result);
             } catch (InputMismatchException ex) {
-                errorInput = scanner.next();
-                if (!"q".equals(errorInput)) {
+                userInput = scanner.next();
+                if (!"q".equals(userInput)) {
                     System.out.println("Wrong input data!");
                 }
-                continue;
             }
         }
     }

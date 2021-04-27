@@ -23,4 +23,5 @@ public class Stock {
     public void setEmmitent(Emmitent emmitent) {
         this.emmitent = emmitent;
     }
+
 }

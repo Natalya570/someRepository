@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите пример в формате '2 + 2' и нажмите Enter:");
         String userInput = "";
-        int firstNumber = 0;
+        int firstNumber;
         int secondNumber = 0;
         String errorInput = "";
         while (!"q".equals(userInput) && !"q".equals(errorInput)) {

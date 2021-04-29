@@ -11,13 +11,10 @@ public class Main {
         Integer [] masOfCosts = new Integer [5];
         Integer[] masOfCounts = new Integer[5];
         int count = 0;
-//        String purchase = "";
         while(count < 5) {
             String s = sc.nextLine();
-//            purchase = purchase + "\n" + s;
             if("q".equals(s)) {
                 break; }
-//            System.out.println(purchase);
             count++;
             String[] parts = s.split(" ");
             if(parts.length != 3){
